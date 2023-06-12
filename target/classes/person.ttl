@@ -1,0 +1,21 @@
+@prefix schema: <http://schema.org/> .
+@prefix : <http://example.com/ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:alice a :User ;
+    schema:name "Alice Cooper" .
+
+:bob a :User ;
+    schema:name "Bob" .
+
+:carol a :User ;
+    schema:name "23" .
+
+:dave a :Student ;
+    schema:name "45" .
+
+:emily a :Student ;
+    schema:name "Emily" .
+
+:Student rdfs:subClassOf :User .

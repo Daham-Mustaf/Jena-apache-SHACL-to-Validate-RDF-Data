@@ -1,0 +1,15 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix schema: <http://schema.org/> .
+@prefix : <http://example.com/ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:UserShape   a  sh:NodeShape ;
+ sh:targetClass :User ;
+ sh:property [
+    sh:path     schema:name ;
+    sh:minCount 1;
+    sh:maxCount 1;
+    sh:datatype xsd:string ;
+        sh:message "Where is the schema:name? and type should be String"
+    ] .
