@@ -1,5 +1,4 @@
-# Jena-apache-SHACL-to-Validate-RDF-Data
-# SHACL Validator
+# SHACL Validator Jena-apache to RDF Data
 
 The SHACL Validator is a Java application that validates a data graph against a shape graph using the SHACL (Shapes Constraint Language) specification. It utilizes the Apache Jena library for RDF processing and the TopBraid SHACL API for validation.
 
